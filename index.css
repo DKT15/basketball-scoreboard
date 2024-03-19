@@ -2,6 +2,12 @@ body {
     margin: 0;
 }
 
+h1 {
+    color: white;
+    font-weight: 900;
+    font-size: 56px;
+}
+
 h3 {
     color: white;
     font-size: 38px;
@@ -148,6 +154,12 @@ h3 {
 
 @media only screen and (min-width: 800px) and (max-width: 1201px) {
 
+    h1 {
+        color: white;
+        font-weight: 900;
+        font-size: 48px;
+    }
+
     h3 {
         color: white;
         font-size: 28px;
@@ -197,6 +209,11 @@ h3 {
 }
 
 @media only screen and (min-width: 380px) and (max-width: 799px) {
+
+    h1 {
+        font-size: 36px;
+    }
+
     .btn-wrapper {
         width: 70%;
     }
