@@ -93,7 +93,7 @@ h3 {
 }
 
 #home-score,
-#away-score {
+#guest-score {
     margin: 0 0 20px 0;
     background-color: black;
     border-radius: 4px;
@@ -108,9 +108,12 @@ h3 {
 /* SCORE END */
 
 /* QUARTER AND POINTS BUTTONS START */
-#point1,
-#point2,
-#point3,
+#home-point1,
+#home-point2,
+#home-point3,
+#guest-point1,
+#guest-point2,
+#guest-point3,
 #quarter2,
 #quarter3,
 #quarter4 {
@@ -125,9 +128,12 @@ h3 {
     cursor: pointer;
 }
 
-#point1:hover,
-#point2:hover,
-#point3:hover,
+#home-point1:hover,
+#home-point2:hover,
+#home-point3:hover,
+#guest-point1:hover,
+#guest-point2:hover,
+#guest-point3:hover,
 #quarter2:hover,
 #quarter3:hover,
 #quarter4:hover {
@@ -185,7 +191,7 @@ h3 {
     }
 
     #home-score,
-    #away-score {
+    #guest-score {
         margin: 0 0 20px 0;
         background-color: black;
         border-radius: 4px;
@@ -197,9 +203,12 @@ h3 {
         font-family: 'Cursed Timer ULiL', sans-serif;
     }
 
-    #point1,
-    #point2,
-    #point3,
+    #home-point1,
+    #home-point2,
+    #home-point3,
+    #guest-point1,
+    #guest-point2,
+    #guest-point3,
     #quarter2,
     #quarter3,
     #quarter4 {
@@ -245,7 +254,7 @@ h3 {
     }
 
     #home-score,
-    #away-score {
+    #guest-score {
         margin: 0 0 20px 0;
         background-color: black;
         border-radius: 4px;
@@ -257,9 +266,12 @@ h3 {
         font-family: 'Cursed Timer ULiL', sans-serif;
     }
 
-    #point1,
-    #point2,
-    #point3,
+    #home-point1,
+    #home-point2,
+    #home-point3,
+    #guest-point1,
+    #guest-point2,
+    #guest-point3,
     #quarter2,
     #quarter3,
     #quarter4 {
