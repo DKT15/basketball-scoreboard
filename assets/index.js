@@ -71,8 +71,10 @@ function startGame() {
 }
 
 function finishGame() {
+  startbtn.disabled = false;
   clearInterval(timer);
   alert("The game has finished. If you want play again click 'Start Game'");
+  time = 12 * 60;
   timerEl.textContent = "12:00";
   quarterEl.textContent = "Q1";
   homeScoreEl.textContent = "0";
