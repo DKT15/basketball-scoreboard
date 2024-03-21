@@ -79,6 +79,7 @@ function finishGame() {
   guestScoreEl.textContent = "0";
 }
 
+// adds to the home score
 function homeScore1() {
   point1 += 1;
   homeScoreEl.innerText = point1 + point2 + point3;
@@ -92,6 +93,7 @@ function homeScore3() {
   homeScoreEl.innerText = point1 + point2 + point3;
 }
 
+// adds to the guest score
 function guestScore1() {
   point1 += 1;
   guestScoreEl.innerText = point1 + point2 + point3;
