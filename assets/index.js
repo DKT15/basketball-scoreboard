@@ -19,6 +19,9 @@ const guestPoint3btn = document.getElementById("guest-point3");
 
 let time = 12 * 60; //this is equal to 720 which is 12 mins in seconds.
 let timer;
+let point1 = 0;
+let point2 = 0;
+let point3 = 0;
 
 // function that allows the timer to start from 12 and countdown.
 function updateTimer() {
@@ -72,6 +75,34 @@ function finishGame() {
   alert("The game has finished. If you want play again click 'Start Game'");
   timerEl.textContent = "12:00";
   quarterEl.textContent = "Q1";
+  homeScoreEl.textContent = "0";
+  guestScoreEl.textContent = "0";
+}
+
+function homeScore1() {
+  point1 += 1;
+  homeScoreEl.innerText = point1 + point2 + point3;
+}
+function homeScore2() {
+  point2 += 2;
+  homeScoreEl.innerText = point1 + point2 + point3;
+}
+function homeScore3() {
+  point3 += 3;
+  homeScoreEl.innerText = point1 + point2 + point3;
+}
+
+function guestScore1() {
+  point1 += 1;
+  guestScoreEl.innerText = point1 + point2 + point3;
+}
+function guestScore2() {
+  point2 += 2;
+  guestScoreEl.innerText = point1 + point2 + point3;
+}
+function guestScore3() {
+  point3 += 3;
+  guestScoreEl.innerText = point1 + point2 + point3;
 }
 
 startbtn.addEventListener("click", startGame); //starts the game when the button has been pressed.
@@ -79,3 +110,10 @@ finishbtn.addEventListener("click", finishGame); //stops the game.
 quarter2btn.addEventListener("click", quarter2); //changes to the game to Q2.
 quarter3btn.addEventListener("click", quarter3); //changes to the game to Q3.
 quarter4btn.addEventListener("click", quarter4); //changes to the game to Q4.
+
+homePoint1btn.addEventListener("click", homeScore1); //adds functionality to points button.
+homePoint2btn.addEventListener("click", homeScore2); //adds functionality to points button.
+homePoint3btn.addEventListener("click", homeScore3); //adds functionality to points button.
+guestPoint1btn.addEventListener("click", guestScore1); //adds functionality to points button.
+guestPoint2btn.addEventListener("click", guestScore2); //adds functionality to points button.
+guestPoint3btn.addEventListener("click", guestScore3); //adds functionality to points button.
