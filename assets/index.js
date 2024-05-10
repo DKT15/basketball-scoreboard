@@ -50,27 +50,31 @@ function updateTimer() {
   }
 }
 
-function quarter2() {
+// changes game to quarter 2.
+quarter2btn.addEventListener("click", function () {
   quarterEl.textContent = "Q2";
   startGame();
-}
+});
 
-function quarter3() {
+// changes game to quarter 3.
+quarter3btn.addEventListener("click", function () {
   quarterEl.textContent = "Q3";
   startGame();
-}
+});
 
-function quarter4() {
+//changes game to quarter 4.
+quarter4btn.addEventListener("click", function () {
   quarterEl.textContent = "Q4";
   startGame();
-}
+});
 
 function startGame() {
   timer = setInterval(updateTimer, 1000); //triggers the timer function above.
   startbtn.disabled = true; // disables the start button after it has been initially clicked.
 }
 
-function finishGame() {
+// finishes the game.
+finishbtn.addEventListener("click", function () {
   startbtn.disabled = false;
   clearInterval(timer);
   alert("The game has finished. If you want play again click 'Start Game'");
@@ -79,45 +83,38 @@ function finishGame() {
   quarterEl.textContent = "Q1";
   homeScoreEl.textContent = "0";
   guestScoreEl.textContent = "0";
-}
+});
 
 // adds to the home score
-function homeScore1() {
+homePoint1btn.addEventListener("click", function () {
   point1 += 1;
   homeScoreEl.innerText = point1 + point2 + point3;
-}
-function homeScore2() {
+});
+
+homePoint2btn.addEventListener("click", function () {
   point2 += 2;
   homeScoreEl.innerText = point1 + point2 + point3;
-}
-function homeScore3() {
+});
+
+homePoint3btn.addEventListener("click", function () {
   point3 += 3;
   homeScoreEl.innerText = point1 + point2 + point3;
-}
+});
 
 // adds to the guest score
-function guestScore1() {
+guestPoint1btn.addEventListener("click", function () {
   point1 += 1;
   guestScoreEl.innerText = point1 + point2 + point3;
-}
-function guestScore2() {
+});
+
+guestPoint2btn.addEventListener("click", function () {
   point2 += 2;
   guestScoreEl.innerText = point1 + point2 + point3;
-}
-function guestScore3() {
+});
+
+guestPoint3btn.addEventListener("click", function () {
   point3 += 3;
   guestScoreEl.innerText = point1 + point2 + point3;
-}
+});
 
 startbtn.addEventListener("click", startGame); //starts the game when the button has been pressed.
-finishbtn.addEventListener("click", finishGame); //stops the game.
-quarter2btn.addEventListener("click", quarter2); //changes to the game to Q2.
-quarter3btn.addEventListener("click", quarter3); //changes to the game to Q3.
-quarter4btn.addEventListener("click", quarter4); //changes to the game to Q4.
-
-homePoint1btn.addEventListener("click", homeScore1); //adds functionality to points button.
-homePoint2btn.addEventListener("click", homeScore2); //adds functionality to points button.
-homePoint3btn.addEventListener("click", homeScore3); //adds functionality to points button.
-guestPoint1btn.addEventListener("click", guestScore1); //adds functionality to points button.
-guestPoint2btn.addEventListener("click", guestScore2); //adds functionality to points button.
-guestPoint3btn.addEventListener("click", guestScore3); //adds functionality to points button.
